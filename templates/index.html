@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>视频流播放</title>
+</head>
+<body>
+    <h1>选择视频流</h1>
+    <select id="streamSelector" onchange="changeStream()">
+        <option value="1">Stream 1</option>
+        <option value="2">Stream 2</option>
+        <option value="3">Stream 3</option>
+    </select>
+    <br /><br />
+    <img id="videoStream" src="/video_feed/1" style="width:640px; height:480px; border:1px solid #ccc;" />
+
+    <script>
+      function changeStream() {
+          var select = document.getElementById('streamSelector');
+          var streamId = select.value;
+          var img = document.getElementById('videoStream');
+          img.src = "/video_feed/" + streamId;
+      }
+    </script>
+</body>
+</html>
