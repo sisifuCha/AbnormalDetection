@@ -38,7 +38,7 @@ def process_stream(stream_url, timeout=10):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 @app.route('/video_feed/<stream_id>')
 def video_feed(stream_id):

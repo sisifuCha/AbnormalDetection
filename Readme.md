@@ -1,4 +1,5 @@
-Readme
+# AbnormalDetection
 
-使用如下命令连接视频流：
-` python video_puller.complete.py`
+远程连接请使用：
+
+``
